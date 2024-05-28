@@ -19,6 +19,11 @@ function Tricks({tricks}){
         return( 
                 <Trick
                 id = {trick.id}
+                key= {`trick-${trick.id}`}
+                stance = {trick.stance}
+                name = {trick.name}
+                obstacle = {trick.obstacle}
+                tutorial = {trick.tutorial}
                 />
             
         )
