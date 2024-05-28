@@ -30,7 +30,7 @@ function Tricks({tricks}){
         )
     })
     return(
-        <div>
+        <div className="tricks-container">
             {toRender}
         </div>
     )
