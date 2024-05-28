@@ -1,7 +1,7 @@
-function Trick({id, key, stance, name, obstacle, tutorial}){
+function Trick({id, stance, name, obstacle, tutorial}){
 
     return(
-        <ul className="trick-card" id={`${id}`} key={`${key}`}>
+        <ul className="trick-card" id={`${id}`}>
             <li>{`${stance}`}</li>
             <li>{`${name}`}</li>
             <li>{`${obstacle}`}</li>
