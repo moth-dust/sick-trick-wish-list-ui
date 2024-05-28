@@ -8,13 +8,18 @@ import { callTricks } from '../../apiCalls/apiCalls';
 // tricks state
 
 function App() {
+  const [trick, setTricks] = useState([])
+
   useEffect(()=>{
     callTricks()
     .then((r)=>{
-      console.log(r)
+      return r.json()
+    })
+    .then((data)=>{
+      setTricks(data)
     })
   },[])
-  const [trick, setTricks] = useState([])
+
   return (
     <div className="App">
       <h1>Sick Trick Wish List</h1>
