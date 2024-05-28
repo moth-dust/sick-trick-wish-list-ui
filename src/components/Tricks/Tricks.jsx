@@ -15,10 +15,17 @@ function Tricks({tricks}){
     } else {
         toRender = tricks
     }
-    
+     toRender = toRender.map((trick)=>{
+        return( 
+                <Trick
+                id = {trick.id}
+                />
+            
+        )
+    })
     return(
         <div>
-            <Trick toRender = {toRender}/>
+            {toRender}
         </div>
     )
 }
