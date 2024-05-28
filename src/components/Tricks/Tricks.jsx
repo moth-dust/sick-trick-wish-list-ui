@@ -1,7 +1,9 @@
+import Trick from "./Trick";
+
 function Tricks({/**tricks props */}){
     return(
         <div>
-            <h1>hello world</h1>
+            <Trick/>
         </div>
     )
 }
