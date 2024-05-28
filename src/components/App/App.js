@@ -8,7 +8,7 @@ import { callTricks } from '../../apiCalls/apiCalls';
 // tricks state
 
 function App() {
-  const [trick, setTricks] = useState([])
+  const [tricks, setTricks] = useState([])
 
   useEffect(()=>{
     callTricks()
@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <h1>Sick Trick Wish List</h1>
       {/* form component */}
-      <Tricks/>
+      <Tricks tricks = {tricks}/>
     </div>
   );
 }

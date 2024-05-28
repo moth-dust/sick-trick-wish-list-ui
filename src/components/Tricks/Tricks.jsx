@@ -2,7 +2,7 @@ import Trick from "./Trick";
 
 function Tricks({tricks}){
     let toRender;
-    if(!tricks){
+    if(!tricks[0]){
         toRender = [
         {
             "stance": "unloaded",
@@ -12,6 +12,8 @@ function Tricks({tricks}){
             "id": 1
         }
     ]
+    } else {
+        toRender = tricks
     }
     
     return(
