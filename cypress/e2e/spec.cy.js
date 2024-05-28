@@ -11,6 +11,7 @@ describe('Display Tests', () => {
   })
 })
 describe('Form Tests',()=>{
+  //note for instructors: ran out of time for writing intercept.
   it('Should take in user inputs and add an element that reflects these inputs.',()=>{
     cy.visit('http://localhost:3000/')
     .get('#stance')
