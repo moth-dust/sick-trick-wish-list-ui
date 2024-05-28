@@ -6,7 +6,10 @@ import Form from '../Form/Form';
 
 function App() {
   const [tricks, setTricks] = useState([])
-
+  function updateTricks(trick){
+    const newTricks = tricks.push(trick)
+    setTricks(newTricks)
+  }
   useEffect(()=>{
     callTricks()
     .then((r)=>{
@@ -20,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <h1>Sick Trick Wish List</h1>
-      <Form/>
+      <Form updateTricks = {updateTricks}/>
       <Tricks tricks = {tricks}/>
     </div>
   );

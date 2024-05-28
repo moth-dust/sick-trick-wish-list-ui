@@ -1,5 +1,4 @@
-function Form({/**updateFunction */}){
-
+function Form({updateTricks}){
     return(
     <div className="trick-submission">
         <select className="stance-select">
