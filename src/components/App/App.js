@@ -7,7 +7,7 @@ import Form from '../Form/Form';
 function App() {
   const [tricks, setTricks] = useState([])
   function updateTricks(trick){
-    const newTricks = tricks.push(trick)
+    const newTricks = [...tricks, trick]
     setTricks(newTricks)
   }
   useEffect(()=>{
