@@ -1,7 +1,8 @@
-function Trick({/**Trick Prop*/}){
+function Trick({toRender}){
+    console.log(toRender)
     return(
         <div>
-            <h1>hello world</h1>
+            <h1>{`${toRender[0].stance}`}</h1>
         </div>
     )
 };
