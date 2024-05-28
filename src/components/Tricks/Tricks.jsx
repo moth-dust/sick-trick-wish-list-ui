@@ -16,6 +16,7 @@ function Tricks({tricks}){
         toRender = tricks
     }
      toRender = toRender.map((trick)=>{
+   
         return( 
                 <Trick
                 id = {trick.id}
